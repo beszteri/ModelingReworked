@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><Games>
+    <PS4games>
+        <PS4game developer="Insomniac Games" genre="Action Adventure" metacritic="87" name="Spider-Man" publisher="Sony Interactive Entertainment">
+            <Evals>
+                <Eval id="single">true</Eval>
+                <Eval id="multi">false</Eval>
+                <Eval id="f2p">false</Eval>
+            </Evals>
+        </PS4game>
+        <PS4game developer="SCE Santa Monica" genre="Action Adventure" metacritic="94" name="God Of War" publisher="Sony Interactive Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">false</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PS4game>
+        <PS4game developer="Polyphony" genre="Racing" metacritic="75" name="GT Sport" publisher="Sony Interactive Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PS4game>
+        <PS4game developer="Supermassive Games" genre="Horror" metacritic="79" name="Until Dawn" publisher="Sony Interactive Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">false</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PS4game>
+        <PS4game developer="Sucker Punch" genre="Action Adventure" metacritic="80" name="Infamous: Second Son" publisher="Sony Interactive Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">false</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PS4game>
+        <PS4game developer="Naughty Dog" genre="Action Adventure" metacritic="95" name="The Last Of Us" publisher="Sony Interactive Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PS4game>
+        <PS4game developer="SCE Santa Monica" genre="Action Adventure" metacritic="85" name="Ratchet and Clank" publisher="Sony Interactive Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">false</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PS4game>
+        <PS4game developer="Team Ico" genre="Action Adventure" metacritic="91" name="Shadow of the Colossus" publisher="Sony Interactive Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">false</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PS4game>
+        <PS4game developer="Quantic Dream" genre="Adventure" metacritic="78" name="Detroit: Become Human" publisher="Sony Interactive Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">false</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PS4game>
+        <PS4game developer="Atlus" genre="JRPG" metacritic="93" name="Persona 5" publisher="Sony Interactive Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">false</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PS4game>
+        <PS4game developer="Sony" genre="Adventure" metacritic="82" name="The Last Guardian" publisher="Sony Interactive Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">false</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PS4game>
+        <PS4game developer="Naughty Dog" genre="Adventure" metacritic="93" name="Uncharted 4: A Thief's End" publisher="Sony Interactive Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PS4game>
+        <PS4game developer="FromSoftware" genre="Action RPG" metacritic="92" name="Bloodborne" publisher="Sony Interactive Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">false</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PS4game>
+        <PS4game developer="Enhance Games" genre="Puzzle" metacritic="89" name="Tetris Effect" publisher="Sony Interactive Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PS4game>
+        <PS4game developer="Capcom" genre="fighting" metacritic="87" name="Street Fighter 5" publisher="Sony Interactive Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PS4game>
+    </PS4games>
+    <XboxOneGames>
+        <XboxOneGame developer="343 Industries" genre="Shooter" metacritic="85" name="Halo: The Master Chief Collection" publisher="Microsoft Studios">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </XboxOneGame>
+        <XboxOneGame developer="Remedy Entertainment" genre="Action" metacritic="77" name="Quantum Break" publisher="Microsoft Studios">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">false</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </XboxOneGame>
+        <XboxOneGame developer="Moon Studios" genre="Platformer" metacritic="88" name="Ori and the Blind Forest" publisher="Microsoft Studios">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">false</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </XboxOneGame>
+        <XboxOneGame developer="Insomniac Games" genre="Action" metacritic="81" name="Sunset Overdrive" publisher="Microsoft Studios">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">false</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </XboxOneGame>
+        <XboxOneGame developer="343 Industries" genre="Shooter" metacritic="84" name="Halo 5: Guardians" publisher="Microsoft Studios">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </XboxOneGame>
+        <XboxOneGame developer="The Coalition" genre="Shooter" metacritic="84" name="Gears of War 4" publisher="Microsoft Studios">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </XboxOneGame>
+        <XboxOneGame developer="StudioMDHR" genre="Platformer" metacritic="86" name="Cuphead" publisher="Microsoft Studios">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </XboxOneGame>
+        <XboxOneGame developer="Turn 10 Studios" genre="Racing" metacritic="86" name="Forza Motorsport 7" publisher="Microsoft Studios">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </XboxOneGame>
+    </XboxOneGames>
+    <NinendoGames>
+        <NinendoGame developer="Nintendo EPD" genre="Fighting" metacritic="77" name="Arms" publisher="Nintendo">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </NinendoGame>
+        <NinendoGame developer="HAL Laboratory" genre="Platformer" metacritic="73" name="Kirby Star Allies" publisher="Nintendo">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </NinendoGame>
+        <NinendoGame developer="Nintendo EPD" genre="Interactive model kit" metacritic="77" name="Nintendo Labo" publisher="Nintendo">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </NinendoGame>
+        <NinendoGame developer="Nintendo EPD" genre="Shooter" metacritic="82" name="Splatoon 2" publisher="Nintendo">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </NinendoGame>
+        <NinendoGame developer="Nintendo EPD" genre="Action Adventure" metacritic="97" name="The Legend of Zelda: Breath of The Wild" publisher="Nintendo">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">false</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </NinendoGame>
+    </NinendoGames>
+    <PCGames>
+        <PCGame developer="Riot Games" genre="MOBA" metacritic="78" name="League Of Legends" publisher="Roit Games">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">true</Eval>
+        </Evals>
+        </PCGame>
+        <PCGame developer="Blizzard Entertainment" genre="MOBA" metacritic="86" name="Heroes of the Storm" publisher="Blizzard Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">true</Eval>
+        </Evals>
+        </PCGame>
+        <PCGame developer="Blizzard Entertainment" genre="MMORPG" metacritic="93" name="World of Warcraft" publisher="Blizzard Entertainment">
+        <Evals>
+            <Eval id="single">false</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">true</Eval>
+        </Evals>
+        </PCGame>
+        <PCGame developer="Blizzard Entertainment" genre="RTS" metacritic="93" name="Starcraft 2" publisher="Blizzard Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PCGame>
+        <PCGame developer="Creativ Assembly" genre="RTS" metacritic="75" name="A Total War Saga: Thrones of Britannia" publisher="Sega">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PCGame>
+        <PCGame developer="Obsidian Entertainment" genre="Role-Playing" metacritic="88" name="Pillars of Eternity" publisher="Paradox Interactive">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </PCGame>
+    </PCGames>
+    <Crossplatforms>
+        <Crossplatform developer="Blizzard Entertainment" genre="Action RPG" metacritic="88" name="Diablo 3" publisher="Blizzard Entertainment">
+        <Evals>
+            <Eval id="single">true</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </Crossplatform>
+        <Crossplatform developer="Blizzard Entertainment" genre="Fighting" metacritic="91" name="Overwatch" publisher="Blizzard Entertainment">
+        <Evals>
+            <Eval id="single">false</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </Crossplatform>
+        <Crossplatform developer="Treyarch" genre="Shooter" metacritic="83" name="Call of Duty: Black Ops 4" publisher="Activision">
+        <Evals>
+            <Eval id="single">false</Eval>
+            <Eval id="multi">true</Eval>
+            <Eval id="f2p">false</Eval>
+        </Evals>
+        </Crossplatform>
+    </Crossplatforms>
+    <NinendoGames>
+        <NinendoGame developer="us dev" genre="uj genre" metacritic="uj meta" name="uj nintendo" publisher="uj pub">
+            <Evals>
+                <Eval id="single">true</Eval>
+                <Eval id="multi">true</Eval>
+                <Eval id="f2p">true</Eval>
+            </Evals>
+        </NinendoGame>
+    </NinendoGames>
+</Games>

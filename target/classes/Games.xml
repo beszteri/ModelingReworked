@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Games>
+
+
+    <PS4games>
+
+
+        <PS4game accessibility="60 GB" developer="Insomniac Games" genre="Action Adventure" metacritic="87"
+                 name="Spider-Man" publisher="Sony Interactive Entertainment">
+        </PS4game>
+
+
+        <PS4game accessibility="Disk" developer="SCE Santa Monica" genre="Action Adventure" metacritic="94"
+                 name="God Of War" publisher="Sony Interactive Entertainment">
+        </PS4game>
+
+
+        <PS4game accessibility="Disk" developer="Polyphony" genre="Racing" metacritic="75" name="GT Sport"
+                 publisher="Sony Interactive Entertainment">
+
+        </PS4game>
+
+
+        <PS4game accessibility="40 GB" developer="Supermassive Games" genre="Horror" metacritic="79" name="Until Dawn"
+                 publisher="Sony Interactive Entertainment">
+
+        </PS4game>
+
+
+        <PS4game accessibility="Disk" developer="Sucker Punch" genre="Action Adventure" metacritic="80"
+                 name="Infamous: Second Son" publisher="Sony Interactive Entertainment">
+
+        </PS4game>
+
+
+        <PS4game accessibility="Disk" developer="Naughty Dog" genre="Action Adventure" metacritic="95"
+                 name="The Last Of Us" publisher="Sony Interactive Entertainment">
+
+        </PS4game>
+
+
+        <PS4game accessibility="Disk" developer="SCE Santa Monica" genre="Action Adventure" metacritic="85"
+                 name="Ratchet and Clank" publisher="Sony Interactive Entertainment">
+
+        </PS4game>
+
+
+        <PS4game accessibility="Disk" developer="Team Ico" genre="Action Adventure" metacritic="91"
+                 name="Shadow of the Colossus" publisher="Sony Interactive Entertainment">
+
+        </PS4game>
+
+
+        <PS4game accessibility="50 GB" developer="Quantic Dream" genre="Adventure" metacritic="78"
+                 name="Detroit: Become Human" publisher="Sony Interactive Entertainment">
+
+        </PS4game>
+
+
+        <PS4game accessibility="Disk" developer="Atlus" genre="JRPG" metacritic="93" name="Persona 5"
+                 publisher="Sony Interactive Entertainment">
+
+        </PS4game>
+
+
+        <PS4game accessibility="Disk" developer="Sony" genre="Adventure" metacritic="82" name="The Last Guardian"
+                 publisher="Sony Interactive Entertainment">
+
+        </PS4game>
+
+
+        <PS4game accessibility="Disk" developer="Naughty Dog" genre="Adventure" metacritic="93"
+                 name="Uncharted 4: A Thief's End" publisher="Sony Interactive Entertainment">
+
+        </PS4game>
+
+
+        <PS4game accessibility="Disk" developer="FromSoftware" genre="Action RPG" metacritic="92" name="Bloodborne"
+                 publisher="Sony Interactive Entertainment">
+
+        </PS4game>
+
+
+        <PS4game accessibility="Disk" developer="Enhance Games" genre="Puzzle" metacritic="89" name="Tetris Effect"
+                 publisher="Sony Interactive Entertainment">
+
+        </PS4game>
+
+
+        <PS4game accessibility="Disk" developer="Capcom" genre="fighting" metacritic="87" name="Street Fighter 5"
+                 publisher="Sony Interactive Entertainment">
+
+        </PS4game>
+
+
+    </PS4games>
+
+
+    <XboxOneGames>
+
+
+        <XboxOneGame accessibility="75 GB" developer="343 Industries" genre="Shooter" metacritic="85"
+                     name="Halo: The Master Chief Collection" publisher="Microsoft Studios">
+
+        </XboxOneGame>
+
+
+        <XboxOneGame accessibility="Disk" developer="Remedy Entertainment" genre="Action" metacritic="77"
+                     name="Quantum Break" publisher="Microsoft Studios">
+
+        </XboxOneGame>
+
+
+        <XboxOneGame accessibility="Disk" developer="Moon Studios" genre="Platformer" metacritic="88"
+                     name="Ori and the Blind Forest" publisher="Microsoft Studios">
+
+        </XboxOneGame>
+
+
+        <XboxOneGame accessibility="Disk" developer="Insomniac Games" genre="Action" metacritic="81"
+                     name="Sunset Overdrive" publisher="Microsoft Studios">
+
+        </XboxOneGame>
+
+
+        <XboxOneGame accessibility="Disk" developer="343 Industries" genre="Shooter" metacritic="84"
+                     name="Halo 5: Guardians" publisher="Microsoft Studios">
+
+        </XboxOneGame>
+
+
+        <XboxOneGame accessibility="Disk" developer="The Coalition" genre="Shooter" metacritic="84"
+                     name="Gears of War 4" publisher="Microsoft Studios">
+
+        </XboxOneGame>
+
+
+        <XboxOneGame accessibility="Disk" developer="StudioMDHR" genre="Platformer" metacritic="86" name="Cuphead"
+                     publisher="Microsoft Studios">
+
+        </XboxOneGame>
+
+
+        <XboxOneGame accessibility="80 GB" developer="Turn 10 Studios" genre="Racing" metacritic="86"
+                     name="Forza Motorsport 7" publisher="Microsoft Studios">
+
+        </XboxOneGame>
+
+
+    </XboxOneGames>
+
+
+    <NintendoGames>
+
+
+        <NintendoGame accessibility="Disk" developer="Nintendo EPD" genre="Fighting" metacritic="77" name="Arms"
+                     publisher="Nintendo">
+
+        </NintendoGame>
+
+
+        <NintendoGame accessibility="Disk" developer="HAL Laboratory" genre="Platformer" metacritic="73"
+                     name="Kirby Star Allies" publisher="Nintendo">
+
+        </NintendoGame>
+
+
+        <NintendoGame accessibility="Disk" developer="Nintendo EPD" genre="Interactive model kit" metacritic="77"
+                     name="Nintendo Labo" publisher="Nintendo">
+
+        </NintendoGame>
+
+
+        <NintendoGame accessibility="Disk" developer="Nintendo EPD" genre="Shooter" metacritic="82" name="Splatoon 2"
+                     publisher="Nintendo">
+
+        </NintendoGame>
+
+
+        <NintendoGame accessibility="20 GB" developer="Nintendo EPD" genre="Action Adventure" metacritic="97"
+                     name="The Legend of Zelda: Breath of The Wild" publisher="Nintendo">
+
+        </NintendoGame>
+
+
+    </NintendoGames>
+
+
+    <PCGames>
+
+
+        <PCGame accessibility="Disk" developer="Riot Games" genre="MOBA" metacritic="78" name="League Of Legends"
+                publisher="Roit Games">
+
+        </PCGame>
+
+
+        <PCGame accessibility="Disk" developer="Blizzard Entertainment" genre="MOBA" metacritic="86"
+                name="Heroes of the Storm" publisher="Blizzard Entertainment">
+
+        </PCGame>
+
+
+        <PCGame accessibility="65 GB" developer="Blizzard Entertainment" genre="MMORPG" metacritic="93"
+                name="World of Warcraft" publisher="Blizzard Entertainment">
+
+        </PCGame>
+
+
+        <PCGame accessibility="Disk" developer="Blizzard Entertainment" genre="RTS" metacritic="93" name="Starcraft 2"
+                publisher="Blizzard Entertainment">
+
+        </PCGame>
+
+
+        <PCGame accessibility="Disk" developer="Creativ Assembly" genre="RTS" metacritic="75"
+                name="A Total War Saga: Thrones of Britannia" publisher="Sega">
+
+        </PCGame>
+
+
+        <PCGame accessibility="Disk" developer="Obsidian Entertainment" genre="Role-Playing" metacritic="88"
+                name="Pillars of Eternity" publisher="Paradox Interactive">
+
+        </PCGame>
+
+
+    </PCGames>
+
+
+    <Crossplatforms>
+
+
+        <Crossplatform accessibility="Disk" developer="Blizzard Entertainment" genre="Action RPG" metacritic="88"
+                       name="Diablo 3" publisher="Blizzard Entertainment">
+
+        </Crossplatform>
+
+
+        <Crossplatform accessibility="35 GB" developer="Blizzard Entertainment" genre="Fighting" metacritic="91"
+                       name="Overwatch" publisher="Blizzard Entertainment">
+
+        </Crossplatform>
+
+
+        <Crossplatform accessibility="Disk" developer="Treyarch" genre="Shooter" metacritic="83"
+                       name="Call of Duty: Black Ops 4" publisher="Activision">
+
+        </Crossplatform>
+
+
+    </Crossplatforms>
+
+</Games>
