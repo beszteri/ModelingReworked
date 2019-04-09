@@ -3,7 +3,7 @@ package api;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FavoriteList {
+public abstract class FavoriteList {
 
     private List<Game> favGames = new ArrayList<>();
     private String name;
@@ -16,13 +16,7 @@ public class FavoriteList {
         this.name = name;
     }
 
-    public FavoriteList(List<Game> favGames) {
-        this.favGames = favGames;
-    }
-
-    public void addToList(Game game){
-        favGames.add(game);
-    }
+    public void addToList(Game game){}
 
     public List<Game> getFavGames() {
         return favGames;

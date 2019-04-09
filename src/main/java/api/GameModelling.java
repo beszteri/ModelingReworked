@@ -4,23 +4,17 @@ import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class GameModelling {
 
     private List<Game> games;
     private List<FavoriteList> favoritLists = new ArrayList<>();
-    private List<Game> favoritList = new ArrayList<>();
-    private List<Game> tempList = new ArrayList<>();
-
-    public GameModelling(List<Game> games, List<FavoriteList> favoritLists) {
-        this.games = games;
-        this.favoritLists = favoritLists;
-    }
 
     public GameModelling(List<Game> games) {
         this.games = games;
     }
 
-    public void addGame(String name, String developer, String publisher, int metacritic, String genre, String accessibility, String subPlatform) {
+    public void addGame(String name, String developer, String publisher, int metacritic, Genre genre, String accessibility, String subPlatform) {
         if (accessibility.equals("Disk")) {
             games.add(new PhysicalGame(name, developer, publisher, metacritic, genre, accessibility, subPlatform));
         } else {
@@ -74,42 +68,39 @@ public class GameModelling {
         favoritLists.remove(id - 1);
     }
 
-    public void getGamesByPlatform(String platform) {
+    public List<Game> getGamesByPlatform(String platform) {
+        List<Game> tempList = new ArrayList<>();
         for (Game g : games) {
             if (g.getSubPlatform().equals(platform)) {
                 tempList.add(g);
             }
         }
-        for (Game g : tempList) {
-            System.out.println(g.getName());
+        return tempList;
+    }
+
+    public void createFavoriteList(String name, Boolean isGoodList) throws ListAlreadyCreatedException {
+        for(FavoriteList fl : favoritLists) {
+            if (fl.getName().equals(name)) {
+                throw new ListAlreadyCreatedException("list already created");
+            }
+        }
+        if(isGoodList){
+            FavoritGoodGames fgg = new FavoritGoodGames(name);
+            favoritLists.add(fgg);
+            System.out.println(fgg.getName() + " added to the favorite lists");
+        }else{
+            FavoriteBadGames fbg = new FavoriteBadGames(name);
+            favoritLists.add(fbg);
+            System.out.println(fbg.getName() + " added to the favorite lists");
         }
     }
 
-    public void createFavoriteList(String name) {
-        FavoriteList fl = new FavoriteList(name);
-        favoritLists.add(fl);
-        System.out.println(fl.getName() + " added to the favorite lists");
-    }
+
+
 
     public void addToFavoriteLists() {
 
     }
 
-
-
-
-    public boolean enumValidator(String name) {
-        List<String> enumList = new ArrayList<>();
-        enumList.add("MOBA");
-        enumList.add("HORROR");
-
-
-        for(String s: enumList) {
-            if(name.equalsIgnoreCase(s)) {
-                return true;
-            }
-        }
-        return false;
-    }
 
 }

@@ -5,12 +5,12 @@
     <PS4games>
 
 
-        <PS4game accessibility="60 GB" developer="Insomniac Games" genre="Action Adventure" metacritic="87"
+        <PS4game accessibility="60 GB" developer="Insomniac Games" genre="Action" metacritic="87"
                  name="Spider-Man" publisher="Sony Interactive Entertainment">
         </PS4game>
 
 
-        <PS4game accessibility="Disk" developer="SCE Santa Monica" genre="Action Adventure" metacritic="94"
+        <PS4game accessibility="Disk" developer="SCE Santa Monica" genre="Action" metacritic="94"
                  name="God Of War" publisher="Sony Interactive Entertainment">
         </PS4game>
 
@@ -27,25 +27,25 @@
         </PS4game>
 
 
-        <PS4game accessibility="Disk" developer="Sucker Punch" genre="Action Adventure" metacritic="80"
+        <PS4game accessibility="Disk" developer="Sucker Punch" genre="Action" metacritic="80"
                  name="Infamous: Second Son" publisher="Sony Interactive Entertainment">
 
         </PS4game>
 
 
-        <PS4game accessibility="Disk" developer="Naughty Dog" genre="Action Adventure" metacritic="95"
+        <PS4game accessibility="Disk" developer="Naughty Dog" genre="Action" metacritic="95"
                  name="The Last Of Us" publisher="Sony Interactive Entertainment">
 
         </PS4game>
 
 
-        <PS4game accessibility="Disk" developer="SCE Santa Monica" genre="Action Adventure" metacritic="85"
+        <PS4game accessibility="Disk" developer="SCE Santa Monica" genre="Action" metacritic="85"
                  name="Ratchet and Clank" publisher="Sony Interactive Entertainment">
 
         </PS4game>
 
 
-        <PS4game accessibility="Disk" developer="Team Ico" genre="Action Adventure" metacritic="91"
+        <PS4game accessibility="Disk" developer="Team Ico" genre="Action" metacritic="91"
                  name="Shadow of the Colossus" publisher="Sony Interactive Entertainment">
 
         </PS4game>
@@ -75,7 +75,7 @@
         </PS4game>
 
 
-        <PS4game accessibility="Disk" developer="FromSoftware" genre="Action RPG" metacritic="92" name="Bloodborne"
+        <PS4game accessibility="Disk" developer="FromSoftware" genre="RPG" metacritic="92" name="Bloodborne"
                  publisher="Sony Interactive Entertainment">
 
         </PS4game>
@@ -165,7 +165,7 @@
         </NintendoGame>
 
 
-        <NintendoGame accessibility="Disk" developer="Nintendo EPD" genre="Interactive model kit" metacritic="77"
+        <NintendoGame accessibility="Disk" developer="Nintendo EPD" genre="IMK" metacritic="77"
                      name="Nintendo Labo" publisher="Nintendo">
 
         </NintendoGame>
@@ -177,7 +177,7 @@
         </NintendoGame>
 
 
-        <NintendoGame accessibility="20 GB" developer="Nintendo EPD" genre="Action Adventure" metacritic="97"
+        <NintendoGame accessibility="20 GB" developer="Nintendo EPD" genre="Action" metacritic="97"
                      name="The Legend of Zelda: Breath of The Wild" publisher="Nintendo">
 
         </NintendoGame>
@@ -219,7 +219,7 @@
         </PCGame>
 
 
-        <PCGame accessibility="Disk" developer="Obsidian Entertainment" genre="Role-Playing" metacritic="88"
+        <PCGame accessibility="Disk" developer="Obsidian Entertainment" genre="RPG" metacritic="88"
                 name="Pillars of Eternity" publisher="Paradox Interactive">
 
         </PCGame>
@@ -231,7 +231,7 @@
     <Crossplatforms>
 
 
-        <Crossplatform accessibility="Disk" developer="Blizzard Entertainment" genre="Action RPG" metacritic="88"
+        <Crossplatform accessibility="Disk" developer="Blizzard Entertainment" genre="RPG" metacritic="88"
                        name="Diablo 3" publisher="Blizzard Entertainment">
 
         </Crossplatform>

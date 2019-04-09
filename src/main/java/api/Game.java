@@ -9,11 +9,11 @@ public abstract class Game {
     protected String developer;
     protected String publisher;
     protected int metacritic;
-    protected String genre;
+    protected Genre genre;
     protected String accessibility;
     protected String subPlatform;
 
-    public Game(String name, String developer, String publisher, int metacritic, String genre, String accessibility, String subPlatform) {
+    public Game(String name, String developer, String publisher, int metacritic, Genre genre, String accessibility, String subPlatform) {
         this.name = name;
         this.developer = developer;
         this.publisher = publisher;
@@ -39,7 +39,7 @@ public abstract class Game {
         return metacritic;
     }
 
-    public String getGenre() {
+    public Genre getGenre() {
         return genre;
     }
 

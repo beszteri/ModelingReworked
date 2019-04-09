@@ -31,7 +31,7 @@ public class Menu {
                 String developer = (nodeList.item(i).getAttributes().getNamedItem("developer").getNodeValue());
                 String publisher = (nodeList.item(i).getAttributes().getNamedItem("publisher").getNodeValue());
                 int metacritic = Integer.valueOf((nodeList.item(i).getAttributes().getNamedItem("metacritic").getNodeValue()));
-                String genre = (nodeList.item(i).getAttributes().getNamedItem("genre").getNodeValue());
+                Genre genre = Genre.valueOf(nodeList.item(i).getAttributes().getNamedItem("genre").getNodeValue().toUpperCase());
                 String access = (nodeList.item(i).getAttributes().getNamedItem("accessibility").getNodeValue());
                 String plat = (nodeList.item(i).getNodeName());
                 if (access.equals("Disk")) {

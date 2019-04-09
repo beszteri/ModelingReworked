@@ -4,7 +4,7 @@ import java.util.List;
 
 public class DigitalGame extends Game {
 
-    public DigitalGame(String name, String developer, String publisher, int metacritic, String genre, String accessibility, String subPlatform) {
+    public DigitalGame(String name, String developer, String publisher, int metacritic, Genre genre, String accessibility, String subPlatform) {
         super(name, developer, publisher, metacritic, genre, accessibility, subPlatform);
     }
 
