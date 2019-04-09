@@ -27,17 +27,17 @@ public class Menu {
             for (int i = 0; i < nodeList.getLength(); i++) {
                 List<String> attributes = new ArrayList<>();
 
-                attributes.add(nodeList.item(i).getAttributes().getNamedItem("name").getNodeValue());
-                attributes.add(nodeList.item(i).getAttributes().getNamedItem("developer").getNodeValue());
-                attributes.add(nodeList.item(i).getAttributes().getNamedItem("publisher").getNodeValue());
-                attributes.add(nodeList.item(i).getAttributes().getNamedItem("metacritic").getNodeValue());
-                attributes.add(nodeList.item(i).getAttributes().getNamedItem("genre").getNodeValue());
-                attributes.add(nodeList.item(i).getAttributes().getNamedItem("accessibility").getNodeValue());
-                attributes.add(nodeList.item(i).getNodeName());
-                if (attributes.get(5).equals("Disk")) {
-                    PhyGames.add(new PhysicalGame(attributes));
+                String name = (nodeList.item(i).getAttributes().getNamedItem("name").getNodeValue());
+                String developer = (nodeList.item(i).getAttributes().getNamedItem("developer").getNodeValue());
+                String publisher = (nodeList.item(i).getAttributes().getNamedItem("publisher").getNodeValue());
+                int metacritic = Integer.valueOf((nodeList.item(i).getAttributes().getNamedItem("metacritic").getNodeValue()));
+                String genre = (nodeList.item(i).getAttributes().getNamedItem("genre").getNodeValue());
+                String access = (nodeList.item(i).getAttributes().getNamedItem("accessibility").getNodeValue());
+                String plat = (nodeList.item(i).getNodeName());
+                if (access.equals("Disk")) {
+                    PhyGames.add(new PhysicalGame(name, developer, publisher, metacritic, genre, access, plat));
                 }else{
-                    DigiGames.add(new DigitalGame(attributes));
+                    DigiGames.add(new DigitalGame(name, developer, publisher, metacritic, genre, access, plat));
                 }
             }
         }
@@ -104,13 +104,6 @@ public class Menu {
         }
     }
 
-    public void addNewGame(List<String> attributes){
-        if (attributes.get(5).equals("Disk")){
-            allGame.add(new PhysicalGame(attributes));
-        }else {
-            allGame.add(new DigitalGame(attributes));
-        }
-    }
 
     public List<Game> getAllGame() {
         return allGame;

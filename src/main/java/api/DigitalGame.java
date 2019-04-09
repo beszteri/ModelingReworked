@@ -4,9 +4,11 @@ import java.util.List;
 
 public class DigitalGame extends Game {
 
-    public DigitalGame(List<String> attributes) {
-        super(attributes);
+    public DigitalGame(String name, String developer, String publisher, int metacritic, String genre, String accessibility, String subPlatform) {
+        super(name, developer, publisher, metacritic, genre, accessibility, subPlatform);
     }
+
+
 
     @Override
     public String toString() {

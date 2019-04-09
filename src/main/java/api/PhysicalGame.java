@@ -4,8 +4,8 @@ import java.util.List;
 
 public class PhysicalGame extends Game {
 
-    public PhysicalGame(List<String> attributes) {
-        super(attributes);
+    public PhysicalGame(String name, String developer, String publisher, int metacritic, String genre, String accessibility, String subPlatform) {
+        super(name, developer, publisher, metacritic, genre, accessibility, subPlatform);
     }
 
     @Override

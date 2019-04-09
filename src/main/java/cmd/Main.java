@@ -8,6 +8,7 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
+
 public class Main {
 
     static Scanner sc = new Scanner(System.in);
@@ -110,6 +111,7 @@ public class Main {
                     clearScreen();
                     String access = "a";
                     String plat = "a";
+                    String genre = "a";
                     List<String> atts = new ArrayList<>();
                     System.out.println("Give a name");
                     String name = sc.nextLine();
@@ -121,24 +123,28 @@ public class Main {
                     String publisher = sc.nextLine();
                     atts.add(publisher);
                     System.out.println("Give a metacritic");
-                    String metacritic = String.valueOf(getAnInteger());
-                    atts.add(metacritic);
-                    while(true) {
+                    int metacritic = getAnInteger();
+                    while (true) {
                         try {
                             System.out.println("Give a genre: ");
-                            String genre = sc.nextLine();
+                            genre = sc.nextLine();
+                            genre = genre.toUpperCase();
+                            Genre genre1 = Genre.valueOf(genre);
+                            genre = String.valueOf(genre1);
                             if (gameModelling.enumValidator(genre)) {
-                                atts.add(genre);
                                 break;
-                            } else {
-                                throw new InvalidEnumException("Invalid enum.");
-                            }
+                            } /*
                         } catch (InvalidEnumException e) {
+                            System.out.println("Please try again.");
+                            screenStopper();
+                            continue; */
+                        } catch (IllegalArgumentException e) {
                             System.out.println("Please try again.");
                             screenStopper();
                             continue;
                         }
                     }
+
 
                     do {
                         System.out.println("Select the accessibility:");
@@ -187,7 +193,7 @@ public class Main {
                         }
                     } while (plat.equals("a"));
                     atts.add(plat);
-                    gameModelling.addGame(atts);
+                    gameModelling.addGame(name, developer, publisher, metacritic, genre, access, plat);
                     break;
                 case 5:
                     clearScreen();

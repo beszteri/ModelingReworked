@@ -20,11 +20,11 @@ public class GameModelling {
         this.games = games;
     }
 
-    public void addGame(List<String> attributes) {
-        if (attributes.get(5).equals("Disk")) {
-            games.add(new PhysicalGame(attributes));
+    public void addGame(String name, String developer, String publisher, int metacritic, String genre, String accessibility, String subPlatform) {
+        if (accessibility.equals("Disk")) {
+            games.add(new PhysicalGame(name, developer, publisher, metacritic, genre, accessibility, subPlatform));
         } else {
-            games.add(new DigitalGame(attributes));
+            games.add(new DigitalGame(name, developer, publisher, metacritic, genre, accessibility, subPlatform));
         }
     }
 
@@ -95,9 +95,14 @@ public class GameModelling {
 
     }
 
+
+
+
     public boolean enumValidator(String name) {
         List<String> enumList = new ArrayList<>();
         enumList.add("MOBA");
+        enumList.add("HORROR");
+
 
         for(String s: enumList) {
             if(name.equalsIgnoreCase(s)) {
