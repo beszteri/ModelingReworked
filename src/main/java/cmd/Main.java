@@ -164,12 +164,15 @@ public class Main {
             String addGame = sc.nextLine();
             System.out.println("Type the name of a list:");
             String usedList = sc.nextLine();
+
             try {
                 gameModelling.addGameToAFavlist(addGame, usedList);
             } catch (AlreadyAddedToTheListException | NoSuchGameException e) {
                 System.out.println("No such game or already added to the list");
             } catch (NoSuchListException e) {
                 System.out.println("No such list");
+            } catch (MetacriticException e) {
+                System.out.println("Wrong list");
             }
         }
     }

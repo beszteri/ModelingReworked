@@ -16,7 +16,7 @@ public abstract class FavoriteList {
         this.name = name;
     }
 
-    public void addToList(Game game)  {}
+    public void addToList(Game game) throws MetacriticException {}
 
     public boolean equals(Object o){
         FavoriteList fl = (FavoriteList) o;

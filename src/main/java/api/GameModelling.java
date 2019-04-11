@@ -38,19 +38,21 @@ public class GameModelling {
         return favoritLists;
     }
 
-    public void addGameToAFavlist(String name, String flName) throws AlreadyAddedToTheListException, NoSuchGameException, NoSuchListException {
+    public void addGameToAFavlist(String name, String flName) throws AlreadyAddedToTheListException, NoSuchGameException, NoSuchListException, MetacriticException {
        if (!favoritLists.contains(new FavoritGoodGames(flName))){
             throw new NoSuchListException("No such list");
         }else if(!games.contains(new DigitalGame(name))){
            throw new NoSuchGameException("No such game");
        }else {
+
            Game a = null;
            for (Game g : games){
                if ( g.getName().equals(name)){
-
                    a = g;
+                   gameValidator(name, flName);
                }
-           }FavoriteList f = null;
+           }
+           FavoriteList f = null;
            for ( FavoriteList fl : favoritLists){
                if (fl.getName().equals(flName)){
                    f = fl;
@@ -106,6 +108,18 @@ public class GameModelling {
             FavoriteBadGames fbg = new FavoriteBadGames(name);
             favoritLists.add(fbg);
             System.out.println(fbg.getName() + " added to the favorite lists");
+        }
+    }
+
+    public void gameValidator(String game, String flName) throws AlreadyAddedToTheListException {
+        for(FavoriteList fl : favoritLists){
+            if (fl.getName().equals(flName)){
+                for (Game g : fl.getFavGames()){
+                    if(g.getName().equals(game)){
+                        throw new AlreadyAddedToTheListException("Already added");
+                    }
+                }
+            }
         }
     }
 }

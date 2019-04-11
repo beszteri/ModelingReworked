@@ -6,9 +6,11 @@ public class FavoriteBadGames extends FavoriteList {
     }
 
     @Override
-    public void addToList(Game game){
-
+    public void addToList(Game game) throws MetacriticException {
+        if (game.getMetacritic() < 87) {
             favGames.add(game);
-
+        }else {
+            throw new MetacriticException("Wrong list");
+        }
     }
 }
