@@ -1,5 +1,10 @@
 package api;
 
+import Exceptions.AlreadyAddedToTheListException;
+import Exceptions.ListAlreadyCreatedException;
+import Exceptions.NoSuchGameException;
+import Exceptions.NoSuchListException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,36 +38,25 @@ public class GameModelling {
         return favoritLists;
     }
 
-    public void addGameToAFavlist(String name, String flName) throws AlreadyAddedToTheListException, NoSuchGameException {
-        /*for (FavoriteList fl : favoritLists) {
-            System.out.println("elso");
-            if (fl.getName().equals(flName)) {
-                for (Game g : games) {
-                    System.out.println("masodik");
-                    if (g.getName().equals(name)) {
-                        fl.addToList(g);
-                        System.out.println("hozzaadva5");
-                        }
-                    }
-                }
-            }
-        }*/
+    public void addGameToAFavlist(String name, String flName) throws AlreadyAddedToTheListException, NoSuchGameException, NoSuchListException {
        if (!favoritLists.contains(new FavoritGoodGames(flName))){
-            System.out.println("nincs");
+            throw new NoSuchListException("No such list");
         }else if(!games.contains(new DigitalGame(name))){
            throw new NoSuchGameException("No such game");
        }else {
            Game a = null;
            for (Game g : games){
                if ( g.getName().equals(name)){
+
                    a = g;
                }
            }FavoriteList f = null;
            for ( FavoriteList fl : favoritLists){
-               if (fl.getName().equals(flname)){
+               if (fl.getName().equals(flName)){
                    f = fl;
                }
            }
+           f.addToList(a);
        }
 
     }

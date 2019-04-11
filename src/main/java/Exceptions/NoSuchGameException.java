@@ -1,4 +1,4 @@
-package api;
+package Exceptions;
 
 public class NoSuchGameException extends Exception {
     public NoSuchGameException(String message) {

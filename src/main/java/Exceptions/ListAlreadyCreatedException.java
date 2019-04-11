@@ -1,4 +1,4 @@
-package api;
+package Exceptions;
 
 public class ListAlreadyCreatedException extends Exception {
     /**

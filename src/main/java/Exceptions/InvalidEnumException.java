@@ -1,4 +1,4 @@
-package api;
+package Exceptions;
 
 public class InvalidEnumException extends Exception {
 

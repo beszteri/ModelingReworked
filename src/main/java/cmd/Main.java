@@ -1,5 +1,9 @@
 package cmd;
 
+import Exceptions.AlreadyAddedToTheListException;
+import Exceptions.ListAlreadyCreatedException;
+import Exceptions.NoSuchGameException;
+import Exceptions.NoSuchListException;
 import api.*;
 
 import java.util.InputMismatchException;
@@ -164,6 +168,8 @@ public class Main {
                 gameModelling.addGameToAFavlist(addGame, usedList);
             } catch (AlreadyAddedToTheListException | NoSuchGameException e) {
                 System.out.println("No such game or already added to the list");
+            } catch (NoSuchListException e) {
+                System.out.println("No such list");
             }
         }
     }
