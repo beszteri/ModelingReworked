@@ -8,5 +8,7 @@ public class FavoritGoodGames extends FavoriteList {
     @Override
     public void addToList(Game game) {
 
+            favGames.add(game);
+
     }
 }

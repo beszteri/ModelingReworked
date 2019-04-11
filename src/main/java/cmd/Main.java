@@ -1,6 +1,7 @@
 package cmd;
 
 import api.*;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -9,22 +10,22 @@ public class Main {
 
     static Scanner sc = new Scanner(System.in);
 
-    public static void lineDrawler() {
+    private static void lineDrawler() {
         System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
     }
 
-    public static void clearScreen() {
+    private static void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
     }
 
-    public static void screenStopper() {
+    private static void screenStopper() {
         System.out.println("Press ENTER to go back");
         Scanner scanner = new Scanner(System.in);
         scanner.nextLine();
     }
 
-    public static int getAnInteger() {
+    private static int getAnInteger() {
         while (true) {
             try {
                 return sc.nextInt();
@@ -35,15 +36,12 @@ public class Main {
         }
     }
 
-
     public static void main(String[] args) {
-
         Menu menu = new Menu();
         menu.gameLoader();
         boolean exit = false;
         GameModelling gameModelling = new GameModelling(menu.getAllGame());
         int meta = 0;
-
 
         do {
             clearScreen();
@@ -87,6 +85,7 @@ public class Main {
                     removeAFavList(gameModelling);
                     break;
                 case 9:
+                    showGamesFromFavList(gameModelling);
                     break;
                 case 0:
                     exit = true;
@@ -95,6 +94,18 @@ public class Main {
 
 
         } while (!exit);
+    }
+
+    private static void showGamesFromFavList(GameModelling gameModelling) {
+        for (FavoriteList fl : gameModelling.getFavoritLists()){
+            System.out.println("");
+            System.out.println(fl.getName());
+            lineDrawler();
+            for(Game g : fl.getFavGames()){
+                System.out.println(g.getName());
+            }
+        }
+        lineDrawler();
     }
 
     private static void removeAFavList(GameModelling gameModelling) {
@@ -131,10 +142,10 @@ public class Main {
 
     private static void addGameToAFavList(GameModelling gameModelling, Scanner sc) {
         clearScreen();
-        if (gameModelling.getFavoritLists().isEmpty()){
+        if (gameModelling.getFavoritLists().isEmpty()) {
             System.out.println("Favorite list not yet created!");
             screenStopper();
-        }else {
+        } else {
             System.out.println("Games:");
             for (Game g : gameModelling.getGames()) {
                 lineDrawler();
@@ -149,7 +160,11 @@ public class Main {
             String addGame = sc.nextLine();
             System.out.println("Type the name of a list:");
             String usedList = sc.nextLine();
-            gameModelling.addGameToAFavlist(addGame, usedList);
+            try {
+                gameModelling.addGameToAFavlist(addGame, usedList);
+            } catch (AlreadyAddedToTheListException | NoSuchGameException e) {
+                System.out.println("No such game or already added to the list");
+            }
         }
     }
 
@@ -160,7 +175,7 @@ public class Main {
         System.out.println("1. Games with good reviews");
         System.out.println("2. Games with bad reviews");
         int listPicker = getAnInteger();
-        switch(listPicker){
+        switch (listPicker) {
             case 1:
                 try {
                     gameModelling.createFavoriteList(newFavListName, true);
@@ -214,6 +229,10 @@ public class Main {
         } else if (platformSelect == 5) {
             gameModelling.getGamesByPlatform("Crossplatform");
         }
+        for (Game g : gameModelling.getTempList()) {
+            System.out.println(g.getName());
+        }
+        gameModelling.getTempList().clear();
         screenStopper();
     }
 
@@ -287,5 +306,4 @@ public class Main {
         } while (plat.equals("a"));
         gameModelling.addGame(name, developer, publisher, metacritic, genre, access, plat);
     }
-
 }

@@ -15,7 +15,7 @@ public class Menu {
     private List<Game> filteredGames = new ArrayList<>();
     private List<Game> favorites = new ArrayList<>();
     private String[] platforms = {"PS4game", "XboxOneGame", "NintendoGame", "PCGame", "Crossplatform"};
-    XMLParser xmlParser = new XMLParser("/home/beszteri/Dokumentumok/Codecool/java/ModellingReworked/src/main/resources/Games.xml");
+    XMLParser xmlParser = new XMLParser("Games.xml");
     XMLwriter xmLwriter = new XMLwriter();
     private String searcedSubPlat;
 
@@ -25,8 +25,6 @@ public class Menu {
         for(String string : platforms){
             NodeList nodeList = xmlParser.getDocument().getElementsByTagName(string);
             for (int i = 0; i < nodeList.getLength(); i++) {
-                List<String> attributes = new ArrayList<>();
-
                 String name = (nodeList.item(i).getAttributes().getNamedItem("name").getNodeValue());
                 String developer = (nodeList.item(i).getAttributes().getNamedItem("developer").getNodeValue());
                 String publisher = (nodeList.item(i).getAttributes().getNamedItem("publisher").getNodeValue());

@@ -5,8 +5,8 @@ import java.util.List;
 
 public abstract class FavoriteList {
 
-    private List<Game> favGames = new ArrayList<>();
-    private String name;
+    protected List<Game> favGames = new ArrayList<>();
+    protected String name;
 
     public String getName() {
         return name;
@@ -16,7 +16,7 @@ public abstract class FavoriteList {
         this.name = name;
     }
 
-    public void addToList(Game game){}
+    public void addToList(Game game)  {}
 
     public List<Game> getFavGames() {
         return favGames;

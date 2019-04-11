@@ -1,14 +1,17 @@
 package api;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class GameModelling {
 
     private List<Game> games;
     private List<FavoriteList> favoritLists = new ArrayList<>();
+    private List<Game> tempList = new ArrayList<>();
+
+    public List<Game> getTempList() {
+        return tempList;
+    }
 
     public GameModelling(List<Game> games) {
         this.games = games;
@@ -22,10 +25,6 @@ public class GameModelling {
         }
     }
 
-    public void removeGame(int id) {
-        games.remove(id - 1);
-    }
-
     public List<Game> getGames() {
         return games;
     }
@@ -34,73 +33,70 @@ public class GameModelling {
         return favoritLists;
     }
 
-    public void addGameToAFavlist(String name, String flName) {
+    public void addGameToAFavlist(String name, String flName) throws AlreadyAddedToTheListException, NoSuchGameException {
         for (FavoriteList fl : favoritLists) {
             if (fl.getName().equals(flName)) {
                 for (Game g : games) {
                     if (g.getName().equals(name)) {
-                        fl.addToList(g);
+                        if(fl.getFavGames().contains(g)){
+                            throw new AlreadyAddedToTheListException("Already added to the list");
+                        }
+
+                            fl.addToList(g);
+
+                    }else {
+                        throw new NoSuchGameException("No such game");
                     }
                 }
             }
         }
-
     }
 
-    public void removeFromFavoriteList(String name, String flName) {
+    public void removeFromFavoriteList(String name, String flName) { //tudom hogy cigány megoldás, de mindig concurrentmodificationerrort kaptam mert iterálás közben akartam removolni.
+        List<Game> reload = new ArrayList<>();
         for (FavoriteList fl : favoritLists) {
             if (fl.getName().equals(flName)) {
                 for (Game g : fl.getFavGames()) {
                     if (g.getName().equals(name)) {
-                        fl.getFavGames().remove(g);
                     } else {
-                        System.out.println("no such game");
+                        reload.add(g);
                     }
+                }fl.favGames.clear();
+                for (Game g : reload){
+                    fl.favGames.add(g);
                 }
             } else {
-                System.out.println("no such game");
+                System.out.println("no such list");
             }
         }
     }
-
 
     public void removeFavoriteList(int id) {
         favoritLists.remove(id - 1);
     }
 
-    public List<Game> getGamesByPlatform(String platform) {
-        List<Game> tempList = new ArrayList<>();
+    public void getGamesByPlatform(String platform) {
         for (Game g : games) {
             if (g.getSubPlatform().equals(platform)) {
                 tempList.add(g);
             }
         }
-        return tempList;
     }
 
     public void createFavoriteList(String name, Boolean isGoodList) throws ListAlreadyCreatedException {
-        for(FavoriteList fl : favoritLists) {
+        for (FavoriteList fl : favoritLists) {
             if (fl.getName().equals(name)) {
                 throw new ListAlreadyCreatedException("list already created");
             }
         }
-        if(isGoodList){
+        if (isGoodList) {
             FavoritGoodGames fgg = new FavoritGoodGames(name);
             favoritLists.add(fgg);
             System.out.println(fgg.getName() + " added to the favorite lists");
-        }else{
+        } else {
             FavoriteBadGames fbg = new FavoriteBadGames(name);
             favoritLists.add(fbg);
             System.out.println(fbg.getName() + " added to the favorite lists");
         }
     }
-
-
-
-
-    public void addToFavoriteLists() {
-
-    }
-
-
 }

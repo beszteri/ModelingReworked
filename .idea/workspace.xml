@@ -2,25 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6bb4315-8434-4450-88ff-11f308f394e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/FavoritGoodGames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/FavoriteBadGames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/ListAlreadyCreatedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Games.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/AlreadyAddedToTheListException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/NoSuchGameException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/DigitalGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/DigitalGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/FavoritGoodGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/FavoritGoodGames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/FavoriteBadGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/FavoriteBadGames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/FavoriteList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/FavoriteList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/GameModelling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/GameModelling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/Genre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/PhysicalGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/PhysicalGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/XMLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/XMLParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cmd/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cmd/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cmd/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cmd/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Games.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Games.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/DigitalGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/DigitalGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/FavoriteList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/FavoriteList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/GameModelling.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/GameModelling.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/Genre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/api/PhysicalGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/PhysicalGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Games.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Games.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/FavoriteList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/GameModelling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/XMLParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/api/XMLParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cmd/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cmd/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cmd/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cmd/Menu.class" afterDir="false" />
     </list>
@@ -35,13 +32,58 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="2093983868">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="7" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="7" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1073" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1073" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cmd/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="176" column="57" selection-start-line="176" selection-start-column="57" selection-end-line="176" selection-end-column="57" />
+            <state relative-caret-position="2771">
+              <caret line="166" column="13" selection-start-line="166" selection-start-column="13" selection-end-line="166" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/XMLParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,8 +94,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/api/GameModelling.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="83" column="78" selection-start-line="83" selection-start-column="78" selection-end-line="83" selection-end-column="78" />
+            <state relative-caret-position="578">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/NoSuchGameException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#114#115#0" expanded="true" />
+                <element signature="e#144#145#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/AlreadyAddedToTheListException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#136#137#0" expanded="true" />
+                <element signature="e#166#167#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/FavoriteList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,41 +142,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/ListAlreadyCreatedException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-              <folding>
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/Genre.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Games.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="221" column="82" selection-start-line="221" selection-start-column="82" selection-end-line="221" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/api/FavoritGoodGames.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+            <state relative-caret-position="119">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#108#109#0" expanded="true" />
                 <element signature="e#135#136#0" expanded="true" />
@@ -108,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/api/FavoriteBadGames.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="102">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
               <folding>
                 <element signature="e#108#109#0" expanded="true" />
                 <element signature="e#135#136#0" expanded="true" />
@@ -122,31 +171,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/cmd/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="34" column="112" lean-forward="true" selection-start-line="34" selection-start-column="112" selection-end-line="34" selection-end-column="112" />
+              <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/InvalidEnumException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-              <folding>
-                <element signature="e#502#503#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/PhysicalGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -179,26 +207,35 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/ModellingReworked.iml" />
-        <option value="$PROJECT_DIR$/src/main/java/api/XMLParser.java" />
         <option value="$PROJECT_DIR$/src/main/resources/NewXml.xml" />
         <option value="$PROJECT_DIR$/src/main/java/api/XMLwriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/Exceptions.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/api/InvalidEnumException.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/FavoriteList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/FavoriteBadGames.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/FavoritGoodGames.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/DigitalGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/PhysicalGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/ListAlreadyCreatedException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cmd/Menu.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/Genre.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Games.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/api/GameModelling.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cmd/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/XMLParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/AlreadyAddedToTheListException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/NoSuchGameException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/MetacriticPointException.java" />
         <option value="$PROJECT_DIR$/src/main/java/cmd/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/GameModelling.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/FavoritGoodGames.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/FavoriteBadGames.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/FavoriteList.java" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -239,66 +276,40 @@
         <subPane>
           <expand>
             <path>
-              <item name="ModellingReworked" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModellingReworked" type="462c0819:PsiDirectoryNode" />
+              <item name="ModelingReworked" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModelingReworked" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ModellingReworked" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModellingReworked" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModellingReworked" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModellingReworked" type="462c0819:PsiDirectoryNode" />
+              <item name="ModelingReworked" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModelingReworked" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ModellingReworked" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModellingReworked" type="462c0819:PsiDirectoryNode" />
+              <item name="ModelingReworked" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModelingReworked" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ModellingReworked" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModellingReworked" type="462c0819:PsiDirectoryNode" />
+              <item name="ModelingReworked" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModelingReworked" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModellingReworked" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModellingReworked" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModellingReworked" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModellingReworked" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cmd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModellingReworked" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModellingReworked" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553675288400" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554895510863" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -307,6 +318,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Codecool\web\ModelingReworked" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="api" />
     </key>
@@ -353,6 +367,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552918688723</updated>
+      <workItem from="1554889708617" duration="5750000" />
     </task>
     <task id="LOCAL-00001" summary="FERTIG">
       <created>1554815456758</created>
@@ -364,11 +379,13 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5750000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18871057" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10095389" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -377,7 +394,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -385,8 +402,8 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32937366" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32982844" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286334" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -395,35 +412,48 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32982844" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Database" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18649696" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10015898" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32937366" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32937366" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.32982844" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3297414" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32937366" />
+      <window_info anchor="right" id="Maven Projects" order="0" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32982844" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32982844" />
     </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FERTIG" />
@@ -443,13 +473,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="1041" selection-start-line="1041" selection-end-line="1041" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/util/ArrayList.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -461,10 +485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#125#126#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -472,46 +492,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2010">
           <caret line="147" column="13" selection-start-line="147" selection-start-column="13" selection-end-line="147" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../HelloWorld/HelloWorld.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/util/Objects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="371" column="29" selection-start-line="371" selection-start-column="29" selection-end-line="371" selection-end-column="29" />
-          <folding>
-            <element signature="e#13877#13878#0" expanded="true" />
-            <element signature="e#13945#13946#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/XMLParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/FavoriteList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../HelloWorld/HelloWorld.java" />
+    <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/util/Objects.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/api/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -526,27 +511,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/PhysicalGame.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/ListAlreadyCreatedException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="153">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/ListAlreadyCreatedException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/Genre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-          <folding>
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Games.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3757">
+          <caret line="221" column="82" selection-start-line="221" selection-start-column="82" selection-end-line="221" selection-end-column="82" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/InvalidEnumException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="204">
           <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
           <folding>
             <element signature="e#502#503#0" expanded="true" />
@@ -554,34 +542,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cmd/Menu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/PhysicalGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="34" column="112" lean-forward="true" selection-start-line="34" selection-start-column="112" selection-end-line="34" selection-end-column="112" />
+        <state relative-caret-position="340">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Games.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/MetacriticPointException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cmd/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2771">
+          <caret line="166" column="13" selection-start-line="166" selection-start-column="13" selection-end-line="166" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/Genre.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/XMLParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state relative-caret-position="153">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Games.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/GameModelling.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="221" column="82" selection-start-line="221" selection-start-column="82" selection-end-line="221" selection-end-column="82" />
+        <state relative-caret-position="578">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/AlreadyAddedToTheListException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#136#137#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/FavoriteList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/FavoritGoodGames.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+        <state relative-caret-position="119">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#108#109#0" expanded="true" />
             <element signature="e#135#136#0" expanded="true" />
@@ -591,8 +617,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/FavoriteBadGames.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="102">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding>
             <element signature="e#108#109#0" expanded="true" />
             <element signature="e#135#136#0" expanded="true" />
@@ -600,22 +626,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/GameModelling.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cmd/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="83" column="78" selection-start-line="83" selection-start-column="78" selection-end-line="83" selection-end-column="78" />
+        <state relative-caret-position="204">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cmd/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/NoSuchGameException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="176" column="57" selection-start-line="176" selection-start-column="57" selection-end-line="176" selection-end-column="57" />
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#114#115#0" expanded="true" />
+            <element signature="e#144#145#0" expanded="true" />
           </folding>
         </state>
       </provider>
