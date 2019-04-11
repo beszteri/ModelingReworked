@@ -18,6 +18,11 @@ public abstract class FavoriteList {
 
     public void addToList(Game game)  {}
 
+    public boolean equals(Object o){
+        FavoriteList fl = (FavoriteList) o;
+        return this.name.equals(fl.getName());
+    }
+
     public List<Game> getFavGames() {
         return favGames;
     }

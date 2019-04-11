@@ -8,7 +8,9 @@ public class DigitalGame extends Game {
         super(name, developer, publisher, metacritic, genre, accessibility, subPlatform);
     }
 
-
+    public DigitalGame(String name) {
+        super(name);
+    }
 
     @Override
     public String toString() {

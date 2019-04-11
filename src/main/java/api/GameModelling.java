@@ -34,22 +34,37 @@ public class GameModelling {
     }
 
     public void addGameToAFavlist(String name, String flName) throws AlreadyAddedToTheListException, NoSuchGameException {
-        for (FavoriteList fl : favoritLists) {
+        /*for (FavoriteList fl : favoritLists) {
+            System.out.println("elso");
             if (fl.getName().equals(flName)) {
                 for (Game g : games) {
+                    System.out.println("masodik");
                     if (g.getName().equals(name)) {
-                        if(fl.getFavGames().contains(g)){
-                            throw new AlreadyAddedToTheListException("Already added to the list");
+                        fl.addToList(g);
+                        System.out.println("hozzaadva5");
                         }
-
-                            fl.addToList(g);
-
-                    }else {
-                        throw new NoSuchGameException("No such game");
                     }
                 }
             }
-        }
+        }*/
+       if (!favoritLists.contains(new FavoritGoodGames(flName))){
+            System.out.println("nincs");
+        }else if(!games.contains(new DigitalGame(name))){
+           throw new NoSuchGameException("No such game");
+       }else {
+           Game a = null;
+           for (Game g : games){
+               if ( g.getName().equals(name)){
+                   a = g;
+               }
+           }FavoriteList f = null;
+           for ( FavoriteList fl : favoritLists){
+               if (fl.getName().equals(flname)){
+                   f = fl;
+               }
+           }
+       }
+
     }
 
     public void removeFromFavoriteList(String name, String flName) { //tudom hogy cigány megoldás, de mindig concurrentmodificationerrort kaptam mert iterálás közben akartam removolni.

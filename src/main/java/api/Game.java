@@ -23,6 +23,15 @@ public abstract class Game {
         this.subPlatform = subPlatform;
     }
 
+    public Game(String name){
+        this.name = name;
+    }
+
+    public boolean equals(Object o){
+        Game g = (Game)o;
+        return this.name.equals(g.getName());
+    }
+
     public String getName() {
         return name;
     }
